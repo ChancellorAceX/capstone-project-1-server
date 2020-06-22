@@ -1,0 +1,7 @@
+CREATE TABLE campaigns (
+  id SERIAL PRIMARY KEY,
+  title TEXT NOT NULL,
+  created TIMESTAMPTZ DEFAULT now() NOT NULL,
+  userid INTEGER
+    REFERENCES users(id) ON DELETE CASCADE NOT NULL
+);
