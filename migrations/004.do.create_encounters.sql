@@ -1,7 +1,7 @@
 CREATE TABLE encounters (
-  id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL,
-  description TEXT DEFAULT NULL,
-  campaignid INTEGER
-    REFERENCES campaigns(id) ON DELETE CASCADE NOT NULL
+  eid SERIAL PRIMARY KEY,
+  encountername TEXT NOT NULL,
+  encounterdesc TEXT DEFAULT NULL,
+  encountercampaignid INTEGER
+    REFERENCES campaigns(cid) ON DELETE CASCADE NOT NULL
 );

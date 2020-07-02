@@ -1,5 +1,5 @@
-require('dotenv').config();
-
+require('dotenv').config('C:\Users\bitcl\Thinkful-EI-Repos\Capstone\1-server\.env');
+console.log(process.env.NODE_ENV)
 module.exports = {
   "migrationDirectory": "migrations",
   "driver": "pg",
