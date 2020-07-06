@@ -6,7 +6,7 @@ const { expect } = require('chai');
 
 
 
-describe('Encounters Endpoints', function () {
+describe('Characters Endpoints', function () {
   let db;
   const {
     testUsers,
@@ -15,11 +15,6 @@ describe('Encounters Endpoints', function () {
     testEncounters,
     testCharacters
   } = helpers.makeFixtures();
-
-  function makeAuthHeader(user) {
-    const token = Buffer.from(`${user.username}:${user.password}`).toString('base64');
-    return `Basid ${token}`;
-  }
 
   before('make knex instance', () => {
     db = knex({
