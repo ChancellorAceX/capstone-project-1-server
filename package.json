@@ -1,6 +1,6 @@
 {
   "name": "bestiary-server",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Server for a DND 5e bestiary application",
   "private": true,
   "main": "src/server.js",
@@ -29,14 +29,13 @@
     "morgan": "^1.10.0",
     "pg": "^8.2.1",
     "postgrator-cli": "^3.2.0",
-    "treeize": "^2.1.2",
     "winston": "^3.2.1",
     "xss": "^1.0.7"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "migrate": "^1.6.2",
-    "mocha": "^7.2.0",
+    "mocha": "^8.0.1",
     "nodemon": "^2.0.4",
     "postgrator-cli": "^3.2.0",
     "supertest": "^4.0.2"
