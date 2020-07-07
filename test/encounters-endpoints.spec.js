@@ -138,7 +138,7 @@ describe('Encounters Endpoints', function () {
       )
     );
 
-    const expected=[...testCharacters.slice(3).concat(testCharacters.slice(0, 3))];
+    const expected = [...testCharacters.slice(3).concat(testCharacters.slice(0, 3))];
     it('responds with 200 and all the characters for the encounter', () => {
       return supertest(app)
         .get('/api/encounter/1')

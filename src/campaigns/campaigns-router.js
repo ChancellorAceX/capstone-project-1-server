@@ -8,14 +8,14 @@ const jsonBodyParser = express.json();
 
 campaignRouter
   .route('/')
-  .get(requireAuth,jsonBodyParser,(req,res,next)=>{
-    CampaignService.getAllCampaigns(req.app.get('db'),req.user.uid)
-      .then(campaigns=>res.json(campaigns))
-      .catch(next)
+  .get(requireAuth, jsonBodyParser, (req, res, next) => {
+    CampaignService.getAllCampaigns(req.app.get('db'), req.user.uid)
+      .then(campaigns => res.json(campaigns))
+      .catch(next);
   })
   .post(requireAuth, jsonBodyParser, (req, res, next) => {
     const { title } = req.body;
-    const {uid} = req.user;
+    const { uid } = req.user;
     const newCampaign = { title, campaignuserid: uid };
 
     for (const [key, value] of Object.entries(newCampaign))

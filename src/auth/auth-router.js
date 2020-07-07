@@ -5,7 +5,7 @@ const jsonBodyParser = express.json();
 
 authRouter
   .post('/', jsonBodyParser, (req, res, next) => {
-    const { username, password} = req.body;
+    const { username, password } = req.body;
     const loginUser = { username, password };
 
     for (const [key, value] of Object.entries(loginUser))
@@ -21,10 +21,10 @@ authRouter
               return res.status(400).json({ error: 'Incorrect username or password' });
             const sub = dbUser.username;
             const payload = { userid: dbUser.id };
-            res.send({ authToken: AuthService.createJwt(sub, payload)});
+            res.send({ authToken: AuthService.createJwt(sub, payload) });
           });
       })
       .catch(next);
   });
 
-  module.exports = authRouter;
+module.exports = authRouter;

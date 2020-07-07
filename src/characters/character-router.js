@@ -41,11 +41,11 @@ characterRouter
       .then(() => res.status(200).json('Character Deleted'))
       .catch(next);
   })
-  .patch(requireAuth,jsonBodyParser,checkIfAuthorized,(req,res,next)=>{
-    CharacterService.updateCharacter(req.app.get('db'),req.params.characterid,req.body.updateObject)
-    .then((data)=>{res.status(200).json(data)})
-    .catch(next);
-  })
+  .patch(requireAuth, jsonBodyParser, checkIfAuthorized, (req, res, next) => {
+    CharacterService.updateCharacter(req.app.get('db'), req.params.characterid, req.body.updateObject)
+      .then((data) => { res.status(200).json(data); })
+      .catch(next);
+  });
 
 async function checkIfAuthorized(req, res, next) {
   try {

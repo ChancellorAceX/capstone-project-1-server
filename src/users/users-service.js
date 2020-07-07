@@ -11,17 +11,17 @@ const UsersService = {
     return null;
   },
 
-  hashPassword(password){
-    return bcrypt.hash(password,12);
+  hashPassword(password) {
+    return bcrypt.hash(password, 12);
   },
 
-  serializeUser(user){
+  serializeUser(user) {
     return {
-      uid:user.uid,
-      fullname:xss(user.fullname),
-      username:xss(user.username),
-      nickname:xss(user.nickname),
-      creation:user.creation
+      uid: user.uid,
+      fullname: xss(user.fullname),
+      username: xss(user.username),
+      nickname: xss(user.nickname),
+      creation: user.creation
     };
   },
 
@@ -40,12 +40,12 @@ const UsersService = {
       .first();
   },
 
-  insertUser(db,newUser){
+  insertUser(db, newUser) {
     return db
       .insert(newUser)
       .into('users')
       .returning('*')
-      .then(([user])=>UsersService.getUserById(db,user.uid));
+      .then(([user]) => UsersService.getUserById(db, user.uid));
   },
 };
 

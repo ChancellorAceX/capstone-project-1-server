@@ -8,14 +8,14 @@ bestiaryRouter
   .route('/')
   .get((req, res, next) => {
     BestiaryService.getAllBeasts(req.app.get('db'))
-      .then(Beasts=>res.json(Beasts))
+      .then(Beasts => res.json(Beasts))
       .catch(next);
   });
 
 bestiaryRouter
   .route('/:bid')
-  .get((req,res,next)=>{
-    BestiaryService.getById(req.app.get('db'),req.params.bid)
-      .then(beast=>res.json(beast));
-  })
+  .get((req, res, next) => {
+    BestiaryService.getById(req.app.get('db'), req.params.bid)
+      .then(beast => res.json(beast));
+  });
 module.exports = bestiaryRouter;  

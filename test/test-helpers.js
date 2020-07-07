@@ -400,7 +400,7 @@ function seedUsers(db, users) {
     );
 }
 
-function seedEncounterTables(db, users, bestiary, campaigns=[], encounters=[], characters=[]) {
+function seedEncounterTables(db, users, bestiary, campaigns = [], encounters = [], characters = []) {
   return db.transaction(async trx => {
     await seedUsers(trx, users);
     await seedBestiary(trx, bestiary);
@@ -430,7 +430,7 @@ function makeAuthHeader(user, secret = process.env.JWT_SECRET) {
   return `Bearer ${token}`;
 }
 
-const makeEncounterData = (encounter, campaigns) => {return {...encounter,...campaigns.find(campaign => campaign.cid == encounter.encountercampaignid)}};
+const makeEncounterData = (encounter, campaigns) => { return { ...encounter, ...campaigns.find(campaign => campaign.cid == encounter.encountercampaignid) }; };
 
 function makeFixtures() {
   const testUsers = makeUsersArray();

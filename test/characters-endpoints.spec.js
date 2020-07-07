@@ -168,15 +168,15 @@ describe('Characters Endpoints', function () {
           expect(res.body[0].hpmax).to.eql(updateObject.hpmax);
         });
     });
-    it('changes the database entry for the target character',()=>{
-      const original=testCharacters[0];
+    it('changes the database entry for the target character', () => {
+      const original = testCharacters[0];
       const updateObject = { "pcname": 'New Name', "initiative": 30, "ac": 50, "hp": 72, "hpmax": 100 };
 
       return supertest(app)
         .patch('/api/character/1')
         .set('Authorization', helpers.makeAuthHeader(testUsers[0]))
         .send({ "updateObject": { "pcname": 'New Name', "initiative": 30, "ac": 50, "hp": 72, "hpmax": 100 } })
-        .expect(()=>testCharacters[0]==={...original,...updateObject})
-    })
+        .expect(() => testCharacters[0] === { ...original, ...updateObject });
+    });
   });
 });

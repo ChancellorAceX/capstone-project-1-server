@@ -55,12 +55,12 @@ const CharacterService = {
       .del();
   },
 
-  updateCharacter(db,pcid,updateObject){
-    const fields = ['pcid','npc','pcclass','level','pcname','initiative','ac','hp','hpmax','pcencounterid','pccampaignid','pcbestiaryid']
+  updateCharacter(db, pcid, updateObject) {
+    const fields = ['pcid', 'npc', 'pcclass', 'level', 'pcname', 'initiative', 'ac', 'hp', 'hpmax', 'pcencounterid', 'pccampaignid', 'pcbestiaryid'];
     return db
       .from('characters')
-      .update(updateObject,fields)
-      .where('pcid',pcid);
+      .update(updateObject, fields)
+      .where('pcid', pcid);
   }
 };
 

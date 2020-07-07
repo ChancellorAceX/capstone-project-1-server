@@ -12,7 +12,7 @@ const EncounterService = {
     const campaignid = await EncounterService.getEncounterCampaignId(db, eid);
     return db
       .from('characters as pc')
-      .select('pc.pcid', 'pc.pcname', 'pc.pcclass', 'pc.level', 'pc.initiative', 'pc.ac', 'pc.hp', 'pc.hpmax', 'pc.pcbestiaryid','pc.npc','pc.pccampaignid','pc.pcencounterid')
+      .select('pc.pcid', 'pc.pcname', 'pc.pcclass', 'pc.level', 'pc.initiative', 'pc.ac', 'pc.hp', 'pc.hpmax', 'pc.pcbestiaryid', 'pc.npc', 'pc.pccampaignid', 'pc.pcencounterid')
       .leftJoin('encounters as e', 'pc.pcencounterid', 'e.eid')
       .leftJoin('campaigns as c', function () {
         this.on('e.encountercampaignid', '=', 'c.cid').orOn('pc.pccampaignid', '=', 'c.cid');
