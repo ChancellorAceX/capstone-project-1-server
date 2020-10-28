@@ -1,12 +1,8 @@
 BEGIN;
 
-  TRUNCATE
-  bestiary,
-  users,
-  campaigns,
-  encounters,
-  characters
-  RESTART IDENTITY CASCADE;
+TRUNCATE 
+bestiary
+RESTART IDENTITY CASCADE;
 
 INSERT INTO bestiary
   (monstername,type,ac,maxhp,speed,burrowspeed,climbspeed,flyspeed,swimspeed,str,strmod,dex,dexmod,con,conmod,int,intmod,wis,wismod,cha,chamod,savingthrows,skills,vulnerabilities,resistances,immunities,senses,languages,cr,xp,extras,actions)
@@ -77,7 +73,7 @@ VALUES
   ARRAY[['Amphibious','The aboleth can breathe air and water'], ['Mucous Cloud','While underwater, the aboleth is surrounded by ransformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a DC 14 Constitution saving throw. On a failure, the creature is deseased for (1d4) hours. The diseased creature can breath only underwater'], ['Probing Telepathy','If a creature communicates telepathically with the aboleth, the aboleth learns the creature''s greatest desires if the aboleth can see the creature.']],
   ARRAY[['Multiattack','The aboleth makes three tentacle attacks.'], ['Tentacle','Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: (2d6+5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature''s skin becomes translucent and slimy, the creature can''t regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.'], ['Tail','Melee Weapon Attack: +9 to hit, reach 10 ft. one target. Hit: (3d6 + 5) bludgeoning damage.'], ['Enslave (3/Day)','The aboleth targets one creature it can see within 3 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the abolthe dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth''s control and can''t take reactions, and the aboleth and the target can communicate telepathically with each other over any distance'], ['Legendary Actions','The aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature''s turn. The aboleth regains spent legendary actions at the start of its turn. --Detect: The aboleth makes a Wisdom (Perception) check. --Tail Swipe: The aboleth makes one tail attack. --Psychic Drain (Costs 2 Actions): One creature charmed by the aboleth takes (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.']]),
 
-  ('Deva',
+  ('Angel: Deva',
   'Medium celestial, lawful good',
   '17 (natural armor)',
   '16d8 + 64',
@@ -110,7 +106,7 @@ VALUES
   ARRAY[['Angelic Weapons','The deva''s weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra (4d8) radiant damage (included in the attack)'], ['Innate Spellcasting','The deva''s spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components: --At will: detect evil and good, --1/day: commune, raise dead'], ['Magic Resistance','The deva has advantage on saving throws against spells and other magical effects.']],
   ARRAY[['Multiattack', 'The deva makes two melee attacks.'], ['Mace', 'Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: (1d6 + 4) bludgeoning damage plus (4d8) radiant damage.'], ['Healing Touch (3/Day)', 'The deva touches another creature. The target magically regains (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness.'], ['Change Shape', 'The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva''s choice). In a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.']]),
 
-  ('Planetar',
+  ('Angel: Planetar',
   'Large celestial, lawful good',
   '19 (natural armor)',
   '16d10 + 112',
@@ -340,49 +336,5 @@ VALUES
   450,
   ARRAY[['Heated Body','A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes (1d10) fire damage.'], ['Heated Weapons','When the azer hits with a metal melee weapon, it deals an extra (1d6) fire damage (included in the attack).'], ['Illumination','The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet.'], ['Living Fire','An azer doesn''t require food, drink, or sleep.']],
   ARRAY[['Warhammer','Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d8 + 3) bludgeoning damage, or (1d10 + 3) bludgeoning damage if used with two hands to make a melee attack, plus (1d6) fire damage.']]);
-
-INSERT INTO users (username, fullname, password, nickname)
-VALUES 
-  ('usera','Aaron Aaronson','$2a$12$IpHCvJOhVSyuK9I020hekOsuPi95/ReFe3MGUlzHUMIHP.pS4NQvy','AA'),
-  ('userb','Betty Baxter','$2a$12$2WHnQO6/Tt2H4pji.KR7zu3XpD4oBoUo.lepQiK0vuFEiLRilL2Zu','BB'),
-  ('userc','Charlie Chaplan','$2a$12$t/bGanhT0dU2xBg5GM.7dOWGi/r0hrjV1pBCbkU6rpUpajPEcnE.K','CC'),
-  ('userd','Deborah Dirk','$2a$12$YOkClsAiStXU6VG.H6kEi.JoByEo9hp47ml0wDAdbnSAksPsz9WIa','DD'),
-  ('usere','Eustace Evergreen','$2a$12$CK4Z.24buYLktMgwDkZE2.Gdva.hg/5B3r8lxTJ1CcwQNcvQBwOCe','EE');
-
-INSERT INTO campaigns (title,campaignuserid)
-VALUES
-  ('Azeroth',1),('Blest',2),('Camelot',3),('Discworld',4),('Essos',5),('Fillory',1),('Grishaverse',1),('Halla',2),('Idris',3);
-
-INSERT INTO encounters (encountername,encounterdesc,encountercampaignid)
-VALUES
-  ('Arbory','Bandit gang',1),('Bank','Angry bank tellers',2),('Castle Grounds','Castle Guards',3),('Dark Cave','Goblins',4),('Eagle''s Nest','Flock of Seagulls',5),('Foyer','Assassin Butler',6),('Green Fields','Wolves',7),('Highland Forest','Pixie Swarm',8),('Island Retreat','Merfolk Natives',9),('Jester''s College','Prakster Pugilists',1),('Karaoke Bar','Rocking Rabble',1),('Limestone Caverns','Ant Warriors',2);
-
-INSERT INTO characters (npc,pcclass,level,pcname,initiative,ac,hp,hpmax,pcencounterid,pccampaignid,pcbestiaryid)
-VALUES
-  (FALSE,'Monk',3,'pa1',null,15,23,29,null,1,null),
-  (FALSE,'Paladin',3,'pb1',null,18,32,32,null,1,null),
-  (FALSE,'Wizard',3,'pc1',null,12,15,20,null,1,null),
-  (FALSE,'Monk',3,'pa2',null,15,23,29,null,2,null),
-  (FALSE,'Paladin',3,'pb2',null,18,32,32,null,2,null),
-  (FALSE,'Wizard',3,'pc2',null,12,15,20,null,2,null),
-  (FALSE,'Monk',3,'pa3',null,15,23,29,null,3,null),
-  (FALSE,'Paladin',3,'pb3',null,18,32,32,null,3,null),
-  (FALSE,'Wizard',3,'pc3',null,12,15,20,null,3,null),
-  (FALSE,'Monk',3,'pa4',null,15,23,29,null,4,null),
-  (FALSE,'Paladin',3,'pb4',null,18,32,32,null,4,null),
-  (FALSE,'Wizard',3,'pc4',null,12,15,20,null,4,null),
-  (FALSE,'Monk',3,'pa5',null,15,23,29,null,5,null),
-  (FALSE,'Paladin',3,'pb5',null,18,32,32,null,5,null),
-  (FALSE,'Wizard',3,'pc5',null,12,15,20,null,5,null),
-  (TRUE,null,null,'Aarakocra1',5,12,24,24,1,null,1),
-  (TRUE,null,null,'Aarakocra3',15,12,20,20,3,null,1),
-  (TRUE,null,null,'Aboleth2',5,17,88,126,2,null,2),
-  (TRUE,null,null,'Aboleth4',15,17,75,115,4,null,2),
-  (TRUE,null,null,'Deva5',5,17,64,100,5,null,3),
-  (TRUE,null,null,'Deva6',15,17,20,85,6,null,3),
-  (TRUE,null,null,'Planetar5',5,19,24,24,5,null,4),
-  (TRUE,null,null,'Planetar6',15,19,20,20,6,null,4),
-  (TRUE,null,null,'Solar5',5,19,24,24,5,null,5),
-  (TRUE,null,null,'Solar6',15,19,20,20,6,null,5);
 
 COMMIT
