@@ -368,7 +368,39 @@ VALUES
   1100,
   ARRAY[['Hover','The banshee hovers above the ground for purposes of movement and does not actually fly'],['Detect Life','The banshee can magically sense the presence of living creatures up to 5 miles away. She knows the general direction they're in but not their exact locations.'],['Incorporeal Movement','The banshee can move through other creatures and objects as if they were difficult terrain. She takes 5 (1d10) force damage if she ends her turn inside an object']],
   ARRAY[['Corrupting Touch','Melee Spell Attack: +4 to hit, reach 5ft, one target. Hit: 12 (3d6 + 2) necrotic damage.'],['Horrifying Visage','Each non-undead creature within 60 feet of the banshee that can see her must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a ta rget''s saving throw is successful or the effect ends for it, the target is immune to the banshee''s Horrifying Visage for the next 24 hours.'],['Wail (1/Day)','The banshee releases a mournful wail, provided that she isn''t in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 ft of her that can hear her must make a DC 13 Con saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 (3d6) psychic damage.']]
-  );
+  ),
+  
+  ('Basilisk',
+  'Medium monstrosity, unaligned',
+  '15 (natural armor)',
+  '858 + 16',
+  20,
+  null,
+  null,
+  null,
+  null,
+  16,
+  3,
+  8,
+  -1,
+  15,
+  2,
+  2,
+  -4,
+  8,
+  -1,
+  7,
+  -2,
+  null,
+  null,
+  null,
+  null,
+  'Darkvision 60ft, passive Perception 9',
+  null,
+  3,
+  700,
+  ARRAY[['Petrifying Gaze','If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn''t incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure , the creature is petrified until freed by the greater restoration spell or other magic. \n A creature that isn''t surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can''t see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. \n If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.']],
+  ARRAY[['Bite','Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: (2d6 + 3) piercing damage plus (2d6) poison damage']]);
   
   
 
