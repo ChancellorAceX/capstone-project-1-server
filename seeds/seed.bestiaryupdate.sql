@@ -361,7 +361,13 @@ VALUES
   'Wis +2, Cha +4',
   null,
   'acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons',
-  'cold, necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained'
+  'cold, necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained',
+  'Darkvision 60ft, passive Perception 10',
+  'Common, Elvish',
+  4,
+  1100,
+  ARRAY[['Hover','The banshee hovers above the ground for purposes of movement and does not actually fly'],['Detect Life','The banshee can magically sense the presence of living creatures up to 5 miles away. She knows the general direction they're in but not their exact locations.'],['Incorporeal Movement','The banshee can move through other creatures and objects as if they were difficult terrain. She takes 5 (1d10) force damage if she ends her turn inside an object']],
+  ARRAY[['Corrupting Touch','Melee Spell Attack: +4 to hit, reach 5ft, one target. Hit: 12 (3d6 + 2) necrotic damage.'],['Horrifying Visage','Each non-undead creature within 60 feet of the banshee that can see her must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a ta rget''s saving throw is successful or the effect ends for it, the target is immune to the banshee''s Horrifying Visage for the next 24 hours.'],['Wail (1/Day)','The banshee releases a mournful wail, provided that she isn''t in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 ft of her that can hear her must make a DC 13 Con saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 (3d6) psychic damage.']]
   );
   
   
