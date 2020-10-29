@@ -400,7 +400,25 @@ VALUES
   3,
   700,
   ARRAY[['Petrifying Gaze','If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn''t incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure , the creature is petrified until freed by the greater restoration spell or other magic. \n A creature that isn''t surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can''t see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. \n If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.']],
-  ARRAY[['Bite','Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: (2d6 + 3) piercing damage plus (2d6) poison damage']]);
+  ARRAY[['Bite','Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: (2d6 + 3) piercing damage plus (2d6) poison damage']]),
+  
+  ('Behir',
+  'Huge monstrosity, neutral evil',
+  '17 (natural armor)',
+  '16d12 + 64',
+  50, null, 40, null, null,
+  23,6,16,3,18,4,7,-2,14,2,12,1,
+  null,
+  'Perception +6, Stealth +7',
+  null,
+  null,
+  'lightning',
+  'Darkvision 90ft, passive Perception 16',
+  'Draconic',
+  11,7200,
+  null,
+  ARRAY[['Multiattack','The behir makes two attacks: one with its bite and one to constrict'],['Bite','Melee Weapon Attack: +10 to hit, reach 10 ft, one target. Hit: (3d10 + 6) piercing damage'],['Constrict', 'Melee Weapon Attack: + 10 to hit, reach 5 ft, one Large or smaller creature. Hit: 17 (2d10 + 6) bludgeoning damage plus (2d10 + 6) slashing damage. The target is grappled (escape DC 16) if the behir isn''t already constricting a creature, and the target is restrained until this grapple ends.'],['Lightning Breath (Recharge 5-6)', 'The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking (12d10) lightning damage on a failed save, or half as much damage on a successful one.'],['Swallow', 'The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blind ed and restrained, it has total cover against attacks and other effects outside the behir, and it takes (6d6) acid damage at the start of each of the behir''s turns. A behir can have only one creature swallowed at a time. \n If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.']]
+  );
   
   
 
