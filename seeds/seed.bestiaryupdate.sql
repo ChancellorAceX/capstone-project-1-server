@@ -335,7 +335,34 @@ VALUES
   2,
   450,
   ARRAY[['Heated Body','A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes (1d10) fire damage.'], ['Heated Weapons','When the azer hits with a metal melee weapon, it deals an extra (1d6) fire damage (included in the attack).'], ['Illumination','The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet.'], ['Living Fire','An azer doesn''t require food, drink, or sleep.']],
-  ARRAY[['Warhammer','Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d8 + 3) bludgeoning damage, or (1d10 + 3) bludgeoning damage if used with two hands to make a melee attack, plus (1d6) fire damage.']]);
+  ARRAY[['Warhammer','Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d8 + 3) bludgeoning damage, or (1d10 + 3) bludgeoning damage if used with two hands to make a melee attack, plus (1d6) fire damage.']]),
+  
+  ('Banshee',
+  'Medium undead, chaotic evil',
+  '12',
+  '13d8',
+  0,
+  null,
+  null,
+  40,
+  null,
+  1,
+  -5,
+  14,
+  2,
+  10,
+  0,
+  12,
+  1,
+  11,
+  0,
+  17,
+  3,
+  'Wis +2, Cha +4',
+  null,
+  'acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons',
+  'cold, necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained'
+  );
   
   
 
