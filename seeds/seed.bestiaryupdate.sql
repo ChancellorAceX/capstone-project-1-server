@@ -489,7 +489,37 @@ VALUES
   'Darkvision 60ft, Tremorsense 60ft, passive Perception 16',
   null,5,1800,
   ARRAY[['Standing Leap','The bulette''s long jump is up to 30ft and its high jump is up to 15ft, with or without a running start']],
-  ARRAY[['Bite','Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit: (4d12 + 4) piercing damage'],['Deadly Leap','If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Str or Dex saving throw (target''s choice) or be knocked prone and take (3d6 + 4) bludgeoning damage plus (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage , isn''t knocked prone, and is pushed 5 feet out of the bulette''s space into an unoccupied space of the creature''s choice. If no unoccupied space is with in range, the creature instead falls prone in the bulette''s space.']]);
+  ARRAY[['Bite','Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit: (4d12 + 4) piercing damage'],['Deadly Leap','If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Str or Dex saving throw (target''s choice) or be knocked prone and take (3d6 + 4) bludgeoning damage plus (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage , isn''t knocked prone, and is pushed 5 feet out of the bulette''s space into an unoccupied space of the creature''s choice. If no unoccupied space is with in range, the creature instead falls prone in the bulette''s space.']]),
+  
+  ('Bullywug','Medium humanoid (bullywug), neutral evil',
+  '15 (hide armor, shield)','2d8 + 2',
+  20,null,null,null,40,
+  12,1,12,1,13,1,7,-2,10,0,7,-2,
+  null,'Stealth +3',null,null,null,
+  'passive Perception 10','Bullywug',0.25,50,
+  ARRAY[['Amphibious','The bullywug can breathe air and water.'],['Speak with Frogs and Toads','The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug'],[Swamp Camouflage','The bullywug has advantage on Dex (Stealth) checks made to hide in swampy terrain'],['Standing Leap','The bullywug''s long jump is up to 20 ft and its high jump is up to 10 ft, with or without a running start.']],
+  ARRAY[['Multiattack','The bullywug makes two melee attacks: one with its bite and one with its spear.'],['Bite','Melee Weapon Attack: +3 to hit, reach 5ft, one target. Hit: (1d4 + 1) bludgeoning damage'],['Spear','Melee or Ranged Weapon Attack: +3 to hit, reach 5ft or range 20/60ft, one target. Hit: (1d6 + 1) piercing damage or (1d8 + 1) piercing damage if used with two hands to make a melee attack.']])
+  
+  ('Cambion','Medium fiend, any evil alignment',
+  '19 (scale mail)','11d8 + 33',
+  30,null,null,60,null,
+  18,4,18,4,16,3,14,2,12,1,16,3,
+  'Str +7, Con +6, Int +5, Cha +6',
+  'Deception +6, Intimidation +6, Perception +4, Stealth +7',
+  null,'cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical weapons',null,
+  'Darkvision 60ft, passive Perception 14', 
+  'Abyssal, Common, Infernal',5,1800,
+  ARRAY[['Fiendish Blessing','The AC of the cambion includes its Charisma bonus'],['Innate Spellcasting',E'The cambion''s spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components:\n  3/day each: alter self, command, detect magic\n  1/day: plane shift (self only)']],
+  ARRAY[['Multiattack','The cambion makes two melee attacks or uses its Fire Ray twice'],['Spear','Melee or Ranged Weapon Attack: +7 to hit, reach 5ft or range 20/60ft, one target. Hit: (1d6 + 4) piercing damage, or (1d8 + 4) piercing damage if used with two hands to make a melee attack, plus (1d6) fire damage.'],['Fire Ray','Ranged Spell Attack: +7 to hit, range 120ft, one target. Hit: (3d6) fire damage.'],['Fiendish Charm','One humanoid the cambion can see within 30 feet of it must succeed on a DC 14 Wis saving throw or be magically charmed for 1 day. The charmed target obeys the cambion''s spoken commands. If the target suffers any harm from the cambion or another creature or receives a suicidal command from the cambion, the target can repeat the saving throw, ending the effect on itself on a success. If a target''s saving throw is successful, or if the effect ends for it, the creature is immune to the cambion''s Fiendish Charm for the next 24 hours.']])
+  
+  ('Carrion Crawler','Large monstrosity, unaligned',
+  '13 (natural armor)','6d10 + 18',
+  30,null,30,null,null,
+  14,2,13,1,16,3,1,-5,12,1,5,-3,
+  null,'Perception +3',null,null,null,
+  'Darkvision 60ft, passive Perception 13',null,2,450,
+  ARRAY[['Keen Smell','The carrion crawler has advantage on Wis (Perception) checks that rely on smell'],['Spider Climb','The carrion crawler can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check']],
+  ARRAY[['Multiattack','The carrion crawler makes two attacks: one with its tentacles and one with its bite'],['Tentacles','Melee Weapon Attack: +8 to hit, reach 10ft, one creature. Hit: (1d4 + 2) poison damage, and the target must succeed on a DC 13 Con saving throw or be poisoned for 1 minute. Until this poison ends, the target or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.'],['Bite','Melee Weapon Attack: +4 to hit, reach 5ft, one target. Hit: (2d4 + 2) piercing damage']]);
     
   
 
@@ -501,7 +531,7 @@ COMMIT
   -- Speed,Burrow Speed,Climb Speed,Flight Speed,Swim Speed,
   -- str,strmod,dex,dexmod,con,conmod,int,intmod,wis,wismod,cha,chamod,
   -- 'saving throws',
-  -- skills,0
+  -- skills,
   -- vulnerabilities,
   -- resistances,
   -- 'immunities',
