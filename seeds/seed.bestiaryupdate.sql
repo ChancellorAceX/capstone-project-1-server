@@ -574,7 +574,26 @@ VALUES
   'Truesight 120ft, passive Perception 15',
   'All, telepathy 120ft',4,1100,
   ARRAY[['Innate Spellcasting',E'The couatl''s spellcasting ability is Cha (spell save DC 14). It can innately cast the following spells, requiring only verbal components:\n  At will: detect evil and good, detect magic, detect thoughts\n  3/day each: bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield\n  1/day each: dream, greater restoration, scrying'],['Magic Weapons','The couratl's weapon attacks are magical'],['Shielded Mind','The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location']],
-  ARRAY[['Bite','Melee Weapon Attack: +8 to hit, reach 5ft, one creature. Hit: (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Con saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.'],['Constrict','Melee Weapon Attack: +6 to hit, reach 10ft, one Medium or smaller creature. Hit: (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can''t constrict another target.'],['Change Shape',E'The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl''s choice).\n  In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks . If the new form has a bite attack, the couatl can use its bite in that form.']]);
+  ARRAY[['Bite','Melee Weapon Attack: +8 to hit, reach 5ft, one creature. Hit: (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Con saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.'],['Constrict','Melee Weapon Attack: +6 to hit, reach 10ft, one Medium or smaller creature. Hit: (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can''t constrict another target.'],['Change Shape',E'The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl''s choice).\n  In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks . If the new form has a bite attack, the couatl can use its bite in that form.']]),
+  
+  ('Crawling Claw','Tiny undead, neutral evil',
+  '12','1d4',
+  20,null,20,null,null,
+  13,1,14,2,11,0,5,-3,10,0,4,-3,
+  null,null,null,null,'poison; charmed, exhaustion, poisoned',
+  'Blindsight 30ft (blind beyond this radius), passive Perception 10',
+  'understands Common but can''t speak',0,10,
+  ARRAY[['Turn Immunity','The claw is immune to effects that turn undead']],
+  ARRAY[['Claw','Melee Weapon Attack: +3 to hit, reach 5ft, one target. Hit: (1d4 + 1) bludgeoning or slashing damage (claw''s choice)']]),
+  
+  ('Cyclops','Huge giant, chaotic neutral',
+  '14 (natural armor)','12d12 + 60',
+  30,null,null,null,null,
+  22,6,11,0,20,5,8,-1,6,-2,10,0,
+  null,null,null,null,null,
+  'passive Perception 8','Giant',6,2300,
+  ARRAY[['Poor Depth Perception','The cyclops has disadvantage on any attack roll against a target more than 30ft away']],
+  ARRAY[['Multiattack','The cyclops makes two greatclub attacks'],['Greatclub','Melee Weapon Attack: +9 to hit, reach 10ft, one target. Hit: (3d8 + 6) bludgeoning damage'],['Rock','Ranged Weapon Attack: +9 to hit, range 30/120ft, one target. Hit: (4d10 + 6) bludgeoning damage']]);
   
   
   
