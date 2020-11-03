@@ -519,7 +519,43 @@ VALUES
   null,'Perception +3',null,null,null,
   'Darkvision 60ft, passive Perception 13',null,2,450,
   ARRAY[['Keen Smell','The carrion crawler has advantage on Wis (Perception) checks that rely on smell'],['Spider Climb','The carrion crawler can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check']],
-  ARRAY[['Multiattack','The carrion crawler makes two attacks: one with its tentacles and one with its bite'],['Tentacles','Melee Weapon Attack: +8 to hit, reach 10ft, one creature. Hit: (1d4 + 2) poison damage, and the target must succeed on a DC 13 Con saving throw or be poisoned for 1 minute. Until this poison ends, the target or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.'],['Bite','Melee Weapon Attack: +4 to hit, reach 5ft, one target. Hit: (2d4 + 2) piercing damage']]);
+  ARRAY[['Multiattack','The carrion crawler makes two attacks: one with its tentacles and one with its bite'],['Tentacles','Melee Weapon Attack: +8 to hit, reach 10ft, one creature. Hit: (1d4 + 2) poison damage, and the target must succeed on a DC 13 Con saving throw or be poisoned for 1 minute. Until this poison ends, the target or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.'],['Bite','Melee Weapon Attack: +4 to hit, reach 5ft, one target. Hit: (2d4 + 2) piercing damage']]),
+  
+  ('Centaur','Large monstrosity, neutral good',
+  '12','6d10 + 12',50,null,null,null,null,
+  18,4,14,2,14,2,9,-1,13,1,11,0,
+  'Athletics +6, Perception +3, Survival +3',null,null,null,
+  'passive Perception 13','Elvish, Sylvan',2,450,
+  ARRAY[['Charge','If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra (3d6) piercing damage.']],
+  ARRAY[['Multiattack','The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.'],['Pike','Melee Weapon Attack: +6 to hit, reach 10ft, one target. Hit: (1d10 + 4) piercing damage.'],['Hooves','Melee Weapon Attack: +6 to hit, reach 5ft, one target. Hit: (2d6 + 4) bludgeoning damage.'],['Longbow','Ranged Weapon Attack: +4 to hit, range 150/600ft, one target. Hit: (1d8 + 2) piercing damage.']]),
+  
+  ('Chimera','Large monstrosity, chaotic evil','14 (natural armor)',
+  '12d10 + 48',30,null,null,60,null,
+  19,4,11,0,19,4,3,-4,14,2,10,0,
+  null,'Perception +8',null,null,null,
+  'Darkvision 60ft, passive Perception 18',
+  'understands Draconic but can''t speak',6,2300,
+  null,ARRAY[['Multiattack','The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its fire breath is available, it can use the breath in place of its bite or horns.'],['Bite','Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit: (2d6 + 4) piercing damage.'],['Horns','Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit: (1d12 + 4) bludgeoning damage'],['Claws','Melee Weapon Attack: +7 to hit, reach 5ft, one target. Hit: (2d6 + 4) slashing damage'],['Fire Breath (Recharge 5-6)','The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dex saving throw, taking (7d8) fire damage on a failed save, or half as much damage on a successful one']]),
+  
+  ('Chuul','Large aberration, chaotic evil',
+  '16 (natural armor)','11d10 + 33',
+  30,null,null,null,30,
+  19,4,10,0,16,3,5,-3,11,0,5,-3,
+  null,'Perception +4',null,null,
+  'poison; poisoned','Darkvision 60ft, passive Perception 14',
+  'understands Deep Speech but can''t speak',4,1100,
+  ARRAY[['Amphibious','The chuul can breathe air and water'],['Sense Magic','The chuul senses magic within 120ft of it at will. This trait otherwise works like the detect magic spell but isn''t itself magical']],
+  ARRAY[['Multiattack','The chuul makes two pincer attack. If the chuul is grappling a creature, the chuul can also use its tentacles once.'],['Pincer','Melee Weapon Attack: +6 to hit, reach 10ft, one target. Hit: (2d6 + 4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn''t have two other creatures grappled.'],['Tentacles','One creature grappled by the chuul must succeed on a DC 13 Con saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.']]),
+  
+  ('Cloaker','Large aberration, chaotic neutral',
+  '14 (natural armor)','12d10 + 12',
+  10,null,null,40,null,
+  17,3,15,2,12,1,13,1,12,1,14,2,
+  null,'Stealth +5',null,null,null,
+  'Darkvision 60ft, passive Perception 11',
+  'Deep Speech, Undercommon',8,3900,
+  ARRAY[['Damage Transfer','While attached to a creature, the cloaker takes only half the damage dealt to it (rounded down), and that creature takes the other half.'],['False Appearance','While the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak'],['Light Sensitivity','While in bright light, the cloaker has disadvantage on attack rolls and Wis (Perception) checks that rely on sight.']],
+  ARRAY[['Multiattack','The cloaker makes two attacks: one with its bite and one with its tail'],['Bite','Melee Weapon Attack: +6 to hit, reach 5 ft, one creature. Hit: (2d6 + 3) piercing damage, and if the target is Large or smaller, the cloaker attaches to it. lf the cloaker has advantage against the target, the cloaker attaches to the target''s head, and the target is blinded and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a DC 16 Strength check.'],['Tail','Melee Weapon Attack: +6 to hit, reach 10ft, one creature. Hit: (1d8 + 3) slashing damage.'],['Moan','Each creature within 60 feet of the cloaker that can hear its moan and that isn''t an aberration must succeed on a DC 13 Wisdom saving throw or become frightened until the end of the cloaker''s next turn. If a creature''s saving throw is successful, the creature is immune to the cloaker''s moan for the next 24 hours'],['Phantasms (Recharges after a Short or Long Rest)',E'The cloaker magically creates three illusory duplicates of itself if it isn''t in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.\n  Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can''t see or if it relies on senses other than sight.\n  A duplicate has the cloaker''s AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.]]);
     
   
 
