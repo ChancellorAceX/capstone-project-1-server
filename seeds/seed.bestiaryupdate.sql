@@ -480,7 +480,7 @@ VALUES
   'Darkvision 60ft, passive Perception 11',
   'Common, Goblin',3,700,
   ARRAY[['Brute','A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack).'],['Heart of Hruggek','The bugbear has advantage on saving throws against being charmed, frightened, paralyzed, poisoned, stunned, or put to sleep.'],['Surprise Attack','If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra (2d6) damage from the attack.']],
-  ARRAY[['Multiattack','The bugbear makes two melee attacks.'],['Morningstar','Melee Weapon Attack: +5 to hit, reach 5ft, one target. Hit: (2d8 + 3) piercing damage'],['Javelin','Melee or Ranged WEapon Attack: +4 to hit, reach 5ft, or range 30/120ft, one target. Hit: (2d6 + 3) piercing damage in melee or (1d6 + 3) piercing damage at range.']])
+  ARRAY[['Multiattack','The bugbear makes two melee attacks.'],['Morningstar','Melee Weapon Attack: +5 to hit, reach 5ft, one target. Hit: (2d8 + 3) piercing damage'],['Javelin','Melee or Ranged WEapon Attack: +4 to hit, reach 5ft, or range 30/120ft, one target. Hit: (2d6 + 3) piercing damage in melee or (1d6 + 3) piercing damage at range.']]),
   
   ('Bulette','Large monstrosity, unaligned','17 (natural armor)',
   '9d10 + 45',40,40,null,null,null,
@@ -497,8 +497,8 @@ VALUES
   12,1,12,1,13,1,7,-2,10,0,7,-2,
   null,'Stealth +3',null,null,null,
   'passive Perception 10','Bullywug',0.25,50,
-  ARRAY[['Amphibious','The bullywug can breathe air and water.'],['Speak with Frogs and Toads','The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug'],[Swamp Camouflage','The bullywug has advantage on Dex (Stealth) checks made to hide in swampy terrain'],['Standing Leap','The bullywug''s long jump is up to 20 ft and its high jump is up to 10 ft, with or without a running start.']],
-  ARRAY[['Multiattack','The bullywug makes two melee attacks: one with its bite and one with its spear.'],['Bite','Melee Weapon Attack: +3 to hit, reach 5ft, one target. Hit: (1d4 + 1) bludgeoning damage'],['Spear','Melee or Ranged Weapon Attack: +3 to hit, reach 5ft or range 20/60ft, one target. Hit: (1d6 + 1) piercing damage or (1d8 + 1) piercing damage if used with two hands to make a melee attack.']])
+  ARRAY[['Amphibious','The bullywug can breathe air and water.'],['Speak with Frogs and Toads','The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug'],['Swamp Camouflage','The bullywug has advantage on Dex (Stealth) checks made to hide in swampy terrain'],['Standing Leap','The bullywug''s long jump is up to 20 ft and its high jump is up to 10 ft, with or without a running start.']],
+  ARRAY[['Multiattack','The bullywug makes two melee attacks: one with its bite and one with its spear.'],['Bite','Melee Weapon Attack: +3 to hit, reach 5ft, one target. Hit: (1d4 + 1) bludgeoning damage'],['Spear','Melee or Ranged Weapon Attack: +3 to hit, reach 5ft or range 20/60ft, one target. Hit: (1d6 + 1) piercing damage or (1d8 + 1) piercing damage if used with two hands to make a melee attack.']]),
   
   ('Cambion','Medium fiend, any evil alignment',
   '19 (scale mail)','11d8 + 33',
@@ -510,7 +510,7 @@ VALUES
   'Darkvision 60ft, passive Perception 14', 
   'Abyssal, Common, Infernal',5,1800,
   ARRAY[['Fiendish Blessing','The AC of the cambion includes its Charisma bonus'],['Innate Spellcasting',E'The cambion''s spellcasting ability is Charisma (spell save DC 14). The cambion can innately cast the following spells, requiring no material components:\n  3/day each: alter self, command, detect magic\n  1/day: plane shift (self only)']],
-  ARRAY[['Multiattack','The cambion makes two melee attacks or uses its Fire Ray twice'],['Spear','Melee or Ranged Weapon Attack: +7 to hit, reach 5ft or range 20/60ft, one target. Hit: (1d6 + 4) piercing damage, or (1d8 + 4) piercing damage if used with two hands to make a melee attack, plus (1d6) fire damage.'],['Fire Ray','Ranged Spell Attack: +7 to hit, range 120ft, one target. Hit: (3d6) fire damage.'],['Fiendish Charm','One humanoid the cambion can see within 30 feet of it must succeed on a DC 14 Wis saving throw or be magically charmed for 1 day. The charmed target obeys the cambion''s spoken commands. If the target suffers any harm from the cambion or another creature or receives a suicidal command from the cambion, the target can repeat the saving throw, ending the effect on itself on a success. If a target''s saving throw is successful, or if the effect ends for it, the creature is immune to the cambion''s Fiendish Charm for the next 24 hours.']])
+  ARRAY[['Multiattack','The cambion makes two melee attacks or uses its Fire Ray twice'],['Spear','Melee or Ranged Weapon Attack: +7 to hit, reach 5ft or range 20/60ft, one target. Hit: (1d6 + 4) piercing damage, or (1d8 + 4) piercing damage if used with two hands to make a melee attack, plus (1d6) fire damage.'],['Fire Ray','Ranged Spell Attack: +7 to hit, range 120ft, one target. Hit: (3d6) fire damage.'],['Fiendish Charm','One humanoid the cambion can see within 30 feet of it must succeed on a DC 14 Wis saving throw or be magically charmed for 1 day. The charmed target obeys the cambion''s spoken commands. If the target suffers any harm from the cambion or another creature or receives a suicidal command from the cambion, the target can repeat the saving throw, ending the effect on itself on a success. If a target''s saving throw is successful, or if the effect ends for it, the creature is immune to the cambion''s Fiendish Charm for the next 24 hours.']]),
   
   ('Carrion Crawler','Large monstrosity, unaligned',
   '13 (natural armor)','6d10 + 18',
