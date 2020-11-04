@@ -604,7 +604,16 @@ VALUES
   ARRAY[['Echolocation','The darkmantle can''t use its blindsight while deafened'],['False Appearance','While the darkmantle remains motionless, it is indistinguishable from a cave formation such as a stalactite or stalagmite.']],
   ARRAY[['Crush',E'Melee Weapon Attack: +5 to hit, reach 5ft, one creature. Hit: (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target''s head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way.\n  While attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle''s speed also becomes 0, it can''t benefit from any bonus to its speed, and it moves with the target.\n  A creature can detach the darkmantle by making a successful DC 13 Str check as an action. On its turn, the darkmantle can detach itself from the target by using 5ft of movement.'],['Darkness Aura (1/Day)','A 15ft radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can''t penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.']]),
   
-  ();
+  ('Death Knight','Medium undead, chaotic evil',
+  '20 (plate, shield)','19d8 + 95',
+  30,null,null,null,null,
+  20,5,11,0,20,5,12,1,16,3,18,4,
+  'Dex +6, Wis +9, Cha +10',null,null,null,
+  'necrotic, poison; exhaustion, frightene, poisoned',
+  'Darkvision 120ft, passive Perception 13',
+  'Abyssal, Common',17,18000,
+  ARRAY[['Magic Resistance','The death knight had advantage on saving throws against spells and other magical effects'],['Marshall Undead','Unless the death knight is incapacitated, it and undead creatures of its choice within 60ft of it have advantage on saving throws against features that turn undead.'],['Spellcasting',E'The death knight is a 19th-level spellcaster. Its spellcasting ability is Cha (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared:\n  1st level (4 slots): command, compelled duel, searing smite\n  2nd level (3 slots): hold person, magic weapon\n  3rd level (3 slots): dispel magic, elemental weapon\n  4th level (3 slots): banishment, staggering smite\n  5th level (2 slots): destructive wave (necrotic)']],
+  ARRAY[['Multiattack','The death knight makes three longsword attacks'],['Longsword','Melee Weapon Attack: +11 to hit, reach 5ft, one target. Hit: (1d8 + 5) slashing damage, or (1d10 + 5) slashing damage if used with two hands, plus (4d8) necrotic damage.'],['Hellfire Orb (1/Day)','The death knight hurls a magical ball of fire that explodes at a point it can see within 120ft of it. Each creature in a 20ft radius sphere centered on that point must make a DC 18 Dex saving throw. The sphere spreads around corners. A creature takes (10d6) fire damage and (10d6) necrotic damage on a failed save, or half as much damage on a successful one'],['Parry - Reaction','The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon.']]);
   
   
   
