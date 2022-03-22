@@ -4,8 +4,8 @@
 const BestiaryService = {
   getAllBeasts(db) {
     const result = db
-      .from('bestiary')
       .select()
+      .from('bestiary')
       .orderBy('monstername');
     console.log(result);
     return result;
