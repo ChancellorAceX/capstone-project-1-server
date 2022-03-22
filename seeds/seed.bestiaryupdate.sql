@@ -626,11 +626,11 @@ VALUES
   ARRAY[['Hover','Flight speed for the demilich applies to the monster''s hovering, not actual flight.'],['Avoidance','If the demilich is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.'],['Legendary Resistance (3/day)','If the demilich fails a saving throw, it can choose to succeed instead'],['Turn Immunity','The demilich is immune to effects that turn undead']],
   ARRAY[['Howl (Recharge 5-6)','The demilich emits a bloodcurdling howl. Each creature within 30ft of the demilich that can hear the howl must succeed on a DC 15 Con saving throw or drop to 0 hit points. On a successful save, the creature is frightened until the end of its turn.'],['Life Drain','The demilich targets up to three creatures that it can see within 10ft of it. Each target must succeed on a DC 19 Con saving throw or take (6d6) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets.'],['Legendary Actions',E'The demilich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The demilich regains spent legendary actions at the start of its turn.\n  Flight: The demilich flies up to half it's flying speed\n  Cloud of Dust: The demilich magically swirls its dusty remains. Each creature within 10ft of the demilich, including around a corner, must succeed on a DC 15 Con saving throw or be blinded until the end of the demilich''s next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich''s next turn.\n  Energy Drain (Costs 2 Actions): Each creature with in 30ft of the demilich must make a DC 15 Con saving throw. On a failed save, the creature''s hit point maximum is magically reduced by (3d6). If a creature''s hit point maximum is reduced to 0 by this effect, the creature dies. A creature''s hit point maximum can be restored with the greater restoration spell or similar magic.\n  Vile Curse (Costs 3 Actions): The demilich targets one creature it can see within 30ft of it. The target must succeed on a DC 15 Wis saving throw or be magically cursed. Until the curse ends, the target has disadvantage on attack rolls and saving throws. The target can repeat the saving throw at the end of each of its turns, ending the curse on a success.']]),
   
-  ('Demon: Balor');
+  -- ('Demon: Balor');
   
   
   
-COMMIT
+-- COMMIT
   -- ('Name',
   -- 'Type, alignment',
   -- 'AC# (mods)',
