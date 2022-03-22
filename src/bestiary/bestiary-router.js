@@ -7,7 +7,6 @@ const bestiaryRouter = express.Router();
 bestiaryRouter
   .route('/')
   .get((req, res, next) => {
-    console.log('hit the endpoint');
     BestiaryService.getAllBeasts(req.app.get('db'))
       .then(Beasts => { console.log('beasts', Beasts); return res.json(Beasts); })
       .catch(next);

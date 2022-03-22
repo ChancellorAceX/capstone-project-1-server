@@ -3,11 +3,12 @@
 
 const BestiaryService = {
   getAllBeasts(db) {
-    console.log('get all beasts')
-    return db
+    const result = db
       .from('bestiary')
       .select()
       .orderBy('monstername');
+    console.log(result);
+    return result;
   },
 
   getById(db, bid) {
