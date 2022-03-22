@@ -17,7 +17,7 @@ app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test',
 }));
 app.use(helmet());
-app.use(cors());
+app.use(cors({origin:['https://battlesource.vercel.app']}));
 
 app.use('/api/bestiary', bestiaryRouter);
 app.use('/api/login', loginRouter);
