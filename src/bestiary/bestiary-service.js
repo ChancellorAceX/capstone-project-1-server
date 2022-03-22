@@ -3,6 +3,7 @@
 
 const BestiaryService = {
   getAllBeasts(db) {
+    console.log('get all beasts')
     return db
       .from('bestiary')
       .select()
