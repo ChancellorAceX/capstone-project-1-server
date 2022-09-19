@@ -7,7 +7,6 @@ const BestiaryService = {
       .select()
       .from('bestiary')
       .orderBy('monstername');
-    console.log(result);
     return result;
   },
 

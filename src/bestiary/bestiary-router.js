@@ -16,6 +16,7 @@ bestiaryRouter
   .route('/:bid')
   .get((req, res, next) => {
     BestiaryService.getById(req.app.get('db'), req.params.bid)
-      .then(beast => res.json(beast));
+      .then(beast => res.json(beast))
+      .catch(next);
   });
 module.exports = bestiaryRouter;  
