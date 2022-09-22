@@ -3,13 +3,10 @@
 
 const BestiaryService = {
   getAllBeasts(db) {
-    console.log('db/result: bestiary service');
-    console.log(db);
     const result = db
       .select()
       .from('bestiary')
       .orderBy('monstername');
-    console.log(result);
     return result;
   },
 

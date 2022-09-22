@@ -8,7 +8,10 @@ bestiaryRouter
   .route('/')
   .get((req, res, next) => {
     BestiaryService.getAllBeasts(req.app.get('db'))
-      .then(Beasts => { return res.json(Beasts); })
+      .then(Beasts => {
+        console.log('db functional:', Beasts);
+        return res.json(Beasts);
+      })
       .catch(next);
   });
 
