@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
@@ -17,7 +18,7 @@ app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test',
 }));
 app.use(helmet());
-app.use(cors({origin:['https://battlesource.vercel.app']}));
+app.use(cors({ origin: ['https://battlesource.vercel.app'] }));
 
 app.use('/api/bestiary', bestiaryRouter);
 app.use('/api/login', loginRouter);
@@ -31,8 +32,7 @@ app.use(function errorHandler(error, req, res, next) {
   if (NODE_ENV === 'production') {
     response = { error: { message: 'server error' } };
   } else {
-    console.error('Error', error);
-    console.error('Req', req)
+    console.error('Error:', error);
     response = { message: error.message, error };
   }
   res.status(500).json(response);
