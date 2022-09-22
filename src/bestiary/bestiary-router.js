@@ -7,6 +7,7 @@ const bestiaryRouter = express.Router();
 bestiaryRouter
   .route('/')
   .get((req, res, next) => {
+    console.log('testing string here - failure point bestiary router');
     BestiaryService.getAllBeasts(req.app.get('db'))
       .then(Beasts => { return res.json(Beasts); })
       .catch(next);
