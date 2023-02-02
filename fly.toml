@@ -34,10 +34,6 @@ processes = []
   [[services.ports]]
     handlers = ["tls", "http"]
     port = 443
-  
-  [[service.ports]]
-    handlers = ["pg_tls"]
-    port = 5432
 
   [[services.tcp_checks]]
     grace_period = "1s"
